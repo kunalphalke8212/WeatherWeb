@@ -86,7 +86,7 @@ public class WeatherWeb extends HttpServlet {
         
         Gson gson=new Gson();
         JsonObject jsonobject=gson.fromJson(responseContent.toString(),JsonObject.class);
-        //System.out.println(jsonobject);
+        System.out.println(jsonobject);
         
         //Separating data from JSON Object to different properties
         
@@ -106,15 +106,19 @@ public class WeatherWeb extends HttpServlet {
         double windSpeed=jsonobject.getAsJsonObject("wind").get("speed").getAsDouble();
         
         //Weather Condition
-        //String weatherCondition=jsonobject.getAsJsonObject("weather").get("0").getAsJsonObject().get("main").getAsString();
+       System.out.println("Before weather condiition check");
+       //String weatherCondition=jsonobject.getAsJsonObject("weather").get(0).getAsJsonObject().get("main").getAsString();
+       String weatherCondition = jsonobject.getAsJsonArray("weather").get(0).getAsJsonObject().get("main").getAsString();
+       System.out.println(weatherCondition);
         
         //After getting Data into right format seating data for JSP page
         
         request.setAttribute("date", date);
         request.setAttribute("tempreature", tempreatureCelsius);
-        //request.setAttribute("weatherCondition", weatherCondition);
+      //  request.setAttribute("weatherCondition", weatherCondition);
         request.setAttribute("humidity", humidity);
         request.setAttribute("windSpeed", windSpeed);
+        request.setAttribute("weatherCondition ", weatherCondition );
         request.setAttribute("weatherData", responseContent.toString());
         
         // closing the connection

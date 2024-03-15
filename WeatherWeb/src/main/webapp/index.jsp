@@ -7,7 +7,22 @@
 <title>Insert title here</title>
 </head>
 <body>
- <% String date = request.getAttribute("date").toString();       
-%><h1><% out.print(date); %></h1>
+ <h1> ${date} </h1>
+ <h1> ${tempreature} </h1>
+ <h1> ${humidity} </h1>
+ <h1> ${windSpeed} </h1>
+ <h1> ${weatherCondition} </h1>
+ 
+
+ 
+ 
+ 
+  
+  
+  <!-- <h3>
+  
+  </h3>
+   -->
+  
 </body>
 </html>
