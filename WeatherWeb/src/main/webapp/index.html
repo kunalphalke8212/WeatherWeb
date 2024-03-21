@@ -5,16 +5,39 @@
 	<meta charset="ISO-8859-1">
 	<title>Weather Brodcasting</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
 </head>
 
-<body>
+		 	 
+	 	
 
-	<form action="WeatherWeb" method="post">
-		<input type="text" name="SearchText" value="Enter city" />
-		<button>Submit</button>
+<body> 
+		<div class="head">
+             <h1>Weather Brodcasting</h1>
+		</div>
 
-	</form>
+         <div class="imagb"></div>
+         
+		 <div class="container">
+		        <div class="headerq">
+		            <div class="search-box">             
+		                <form action="WeatherWeb" method="post">                
+						 	<input type="text" name="SearchText" placeholder="Enter Your City"/>
+							<button type="submit" class="fa-solid fa-magnifying-glass" id="searchBtn"><i class="fa fa-search"></i></button>							
+		                </form>	   		                 	              
+		            </div>
+		 </div>
+        
+         
 
+	 <footer>
+        <small>
+           Copyright © 2024 Weather Web. All Rights Reserved.
+       </small>
+    </footer>
+  
 </body>
+ 
 
 </html>
