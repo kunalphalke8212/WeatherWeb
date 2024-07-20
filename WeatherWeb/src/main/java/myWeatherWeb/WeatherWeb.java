@@ -47,7 +47,7 @@ public class WeatherWeb extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
-		String inputdata=request.getParameter("SearchText");
+		//String inputdata=request.getParameter("SearchText");
 		//System.out.println(inputdata);
 
 		//API Key
@@ -87,7 +87,7 @@ public class WeatherWeb extends HttpServlet {
 
         Gson gson=new Gson();
         JsonObject jsonobject=gson.fromJson(responseContent.toString(),JsonObject.class);
-        System.out.println(jsonobject);
+        //System.out.println(jsonobject);
 
         //Separating data from JSON Object to different properties
 
@@ -95,7 +95,7 @@ public class WeatherWeb extends HttpServlet {
         long dateTimeTemp=jsonobject.get("dt").getAsLong()*1000;
         String date=new Date(dateTimeTemp).toString();
 
-        long timestamp = jsonobject.get("dt").getAsLong();
+       // long timestamp = jsonobject.get("dt").getAsLong();
 
       /* // Convert timestamp to LocalDateTime
         LocalDateTime dateTime = LocalDateTime.ofInstant(Instant.ofEpochSecond(timestamp), ZoneOffset.UTC);
@@ -132,7 +132,7 @@ public class WeatherWeb extends HttpServlet {
        //System.out.println("Before weather condiition check");
        //String weatherCondition=jsonobject.getAsJsonObject("weather").get(0).getAsJsonObject().get("main").getAsString();
        String weatherCondition = jsonobject.getAsJsonArray("weather").get(0).getAsJsonObject().get("main").getAsString();
-       System.out.println(weatherCondition);
+      // System.out.println(weatherCondition);
 
         //After getting Data into right format seating data for JSP page
         request.setAttribute("CityName", CityName);

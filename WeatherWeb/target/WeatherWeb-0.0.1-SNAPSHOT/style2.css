@@ -1,0 +1,312 @@
+@charset "ISO-8859-1";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 12pt;
+  font-weight: 400;
+  color: black;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  
+    background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.imagb{
+	position: absolute;
+	width:100%;
+	height:100%;
+	filter: blur(4px);
+	margin:0;
+	padding:0;
+	-webkit-filter: blur(4px);
+	background-image: url(images/b2.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	z-index:-1;
+}
+.city{
+	position: absolute;
+    top: 12%;
+    left: 30%;
+    text-transform: uppercase;
+    margin: 10px;
+    white-space: nowrap;
+    color: aliceblue;
+    font-size: 45px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    }
+
+
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    min-width: 624px;
+    min-height: 450px;
+    max-width:658px;
+    max-height: 550px;
+    
+   
+    
+    background: linear-gradient(35deg, #0039ff33 0%, #4100ff1c 84.7%, #0800ff59 91.3%);
+     
+ 
+   box-shadow: 0 10px 60px 0 red, inset 0px -10px 17px 2px #2000ff;
+    border-radius: 25px;
+    z-index: -1;
+  }
+  .card:before{
+    background-color: rgba(0, 0, 0, 0.594);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 10px 60px 0 DarkViolet, inset 0px -10px 17px 2px MediumOrchid;
+    border-radius: 25px;
+    z-index: -1;
+  }
+.date {
+      position:absolute;
+      top: 35%;
+      left: 5%;
+      margin: 0px;
+        font-style: italic;
+      white-space: nowrap;
+     
+      color: aliceblue;
+     background-color: #00a2ffa7;
+      font-size: 40px;
+      font-weight: 600;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+  }
+  .box img{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0%;
+    left: 0%;
+    height: 150px;
+    width: 150px;
+   
+  }
+  .imagT img {
+ 
+    left: 10px;
+    height: 50px;
+    margin: 10px;
+    bottom:  165px;
+    width: 50px;
+    /* color: white; */
+    /* background-color: white; */
+    position: absolute;
+    top: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.temp{
+position:absolute;
+      top: 47%;
+      left: 12%;
+      margin: 0px;
+      white-space: nowrap;
+      color: aliceblue;
+     
+      font-size: 40px;
+      font-weight: 600;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.temp sup{
+      position: absolute;
+      top: -4px;
+      font-size: 25px;
+      font-weight: 400;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imagH img {
+ 
+    left: 10px;
+    height: 50px;
+    margin: 10px;
+    bottom:  100px;
+    width: 50px;
+    /* color: white; */
+    /* background-color: white; */
+    position: absolute;
+    top: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.humi{
+	  position:absolute;
+      top: 64%;
+      left: 12%;
+      margin: 0px;
+      white-space: nowrap;
+      color: aliceblue;
+     
+      font-size: 40px;
+      font-weight: 600;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.humi sup{
+      position: absolute;
+      top: -4px;
+      font-size: 20px;
+      font-weight: 400;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.imagW img {
+ 
+    left: 10px;
+    height: 50px;
+    margin: 10px;
+    bottom:  32px;
+    width: 50px;
+    /* color: white; */
+    /* background-color: white; */
+    position: absolute;
+    top: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wind{
+	  position:absolute;
+      top: 79%;
+      left: 12%;
+      margin: 0px;
+      white-space: nowrap;
+      color: aliceblue;
+     
+      font-size: 40px;
+      font-weight: 600;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.imagWea img{
+ left: 291px;
+    height: 50px;
+    margin: 10px;
+    bottom: 166px;
+    width: 50px;
+    /* color: white; */
+    /* background-color: white; */
+    position: absolute;
+    top: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wind sup{
+      position: absolute;
+      top: -4px;
+      font-size: 20px;
+      font-weight: 400;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weather{
+	  position:absolute;
+      top: 49%;
+      left: 58%;
+      margin: 0px;
+      white-space: nowrap;
+      color: aliceblue;
+     
+      font-size: 40px;
+      font-weight: 600;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imagP img{
+ left: 291px;
+    height: 50px;
+    margin: 10px;
+    bottom: 100px;
+    width: 50px;
+    /* color: white; */
+    /* background-color: white; */
+    position: absolute;
+    top: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Pressure{
+	  position:absolute;
+      top: 63%;
+      left: 58%;
+      margin: 0px;
+      white-space: nowrap;
+      color: aliceblue;
+     
+      font-size: 40px;
+      font-weight: 600;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Pressure sup{
+      font-size: 20px;
+      font-weight: 400;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imagC img{
+ left: 291px;
+    height: 50px;
+    margin: 10px;
+    bottom: 33px;
+    width: 50px;
+    /* color: white; */
+    /* background-color: white; */
+    position: absolute;
+    top: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.country{
+	  position:absolute;
+      top: 79%;
+      left: 58%;
+      margin: 0px;
+      white-space: nowrap;
+      color: aliceblue;
+     
+      font-size: 40px;
+      font-weight: 600;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.country sup{
+      font-size: 20px;
+      font-weight: 400;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
